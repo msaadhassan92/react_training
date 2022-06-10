@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import './style.css';
+import Constructor from './10-06-2022/Constructor';
+import ComponentDidMount from './10-06-2022/ComponentDidMount';
+import ComponentDidUpdate from './10-06-2022/ComponentDidUpdate';
+import ComponentWillUnmount from './10-06-2022/ComponentWillUnmount';
+// Rare used methods
+import ShouldComponentUpdate from './10-06-2022/RareUsingComponents/ShouldComponentUpdate';
+import GetDerivedStateFromProps from './10-06-2022/RareUsingComponents/GetDerivedStateFromProps';
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {/* <Constructor name="Coming from parent component" /> */}
+      {/* <ComponentDidMount name="Coming from parent component" /> */}
+      {/* <ComponentDidUpdate name="Coming from parent component" /> */}
+      {/* <ComponentWillUnmount name="Coming from parent component" /> */}
+      {/* <ShouldComponentUpdate name="Coming from parent component" /> */}
+      <GetDerivedStateFromProps name="Coming from parent component" />
     </div>
   );
 }
-
-export default App;
