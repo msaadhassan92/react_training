@@ -13,10 +13,10 @@ export default function App() {
     <div>
       {/* <Constructor name="Coming from parent component" /> */}
       {/* <ComponentDidMount name="Coming from parent component" /> */}
-      {/* <ComponentDidUpdate name="Coming from parent component" /> */}
+      <ComponentDidUpdate name="Coming from parent component" />
       {/* <ComponentWillUnmount name="Coming from parent component" /> */}
       {/* <ShouldComponentUpdate name="Coming from parent component" /> */}
-      <GetDerivedStateFromProps name="Coming from parent component" />
+      {/* <GetDerivedStateFromProps name="Coming from parent component" /> */}
     </div>
   );
 }

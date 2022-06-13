@@ -18,7 +18,7 @@ export default class Constructor extends React.Component {
 
   // this is also possible to initialize states outside the constructor but this is not the recommended way
   // this can cause issue when component re renders but in constructor it initialize only once not again and again at every render
-  //state = { name: this.props.name };
+  // state = { name: this.props.name };
 
   // Arrow function automatically embed in class scope
   // If we use simple functions then we have to bind them in constructor
@@ -44,7 +44,7 @@ export default class Constructor extends React.Component {
       <div>
         <h1>Constructor Component</h1>
         <h2>Name = {this.state.name}</h2>
-        {/* Recommended Way */}
+        {/* First Way (Recommended) */}
         <button onClick={this.updateName}>Click me</button>
         {/* Second Way */}
         <button onClick={this.updateNameScenerio2.bind(this)}>Click me</button>
